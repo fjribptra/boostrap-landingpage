@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Create Landing Page With BS</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .jumbotron-content {
+        min-height: 400px;
+    }
+
+    .service-card:hover {
+        background-color: rgba(0, 0, 0, .5);
+        color: white;
+        transition: .3s all;
+    }
+</style>
+
+<body>
+    <!-- Navigation Bar start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">
+                <h1>TOKOPAEDI</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navBarContent" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation Bar end -->
+    <!-- Header Start -->
+    <header class="jumbotron jumbotron-fluid bg-success text-white">
+        <div
+            class="jumbotron-content container-fluid text-center d-flex flex-column justify-content-center align-items-center">
+            <h1 class="display-4-sm">This Is TOKOPAEDI</h1>
+            <p class="lead">Let's Shopping now</p>
+            <div class="row">
+                <a href="#products" class="btn btn-primary mr-2">Buy now</a>
+                <a href="#about" class="btn btn-light ml-2">About us</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- About Start -->
+    <section id="about">
+        <div class="container text-center py-5">
+            <h1>About Us</h1>
+            <div class="row px-3 mt-4">
+                <div class="col-12 col-sm-7 text-sm-left">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt autem saepe, ratione
+                        qui
+                        aliquid eligendi fugiat modi vel velit, ex, dicta non commodi dolorum. Minus harum molestiae
+                        fugit
+                        molestias voluptate at vero quibusdam debitis repudiandae reiciendis tempora natus reprehenderit
+                        quis totam, iste suscipit! Incidunt iusto itaque voluptatum culpa velit odit corrupti pariatur
+                        sed/p>
+                </div>
+                <div class="col-12 mt-3 mt-sm-0 col-sm-5 d-flex aligm-items-center">
+                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--IT3Kuhc7--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/a2w3y0ttoysnodawoo2e.png"
+                        class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+    <!-- Service Start -->
+    <section id="services">
+        <div class="container text-center pb-5">
+            <h1>Our Services</h1>
+            <div class="row">
+                <div class=" col col-sm-4 d-flex justify-content-center mt-5">
+                    <div class="service-card card" style="width: 18rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor"
+                            class="bi bi-1-circle mx-auto mt-3" viewBox="0 0 16 16">
+                            <path
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383z" />
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-5">
+                    <div class="service-card card" style="width: 18rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor"
+                            class="bi bi-2-circle mx-auto mt-3" viewBox="0 0 16 16">
+                            <path
+                                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306" />
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-5">
+                    <div class="service-card card" style="width: 18rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" fill="currentColor"
+                            class="bi bi-3-circle mx-auto mt-3" viewBox="0 0 16 16">
+                            <path
+                                d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318" />
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8" />
+                        </svg>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Service End -->
+    <!-- Product Start -->
+    <section id="products">
+        <div class="container text-center bg-light py-5">
+            <h1>Our Products</h1>
+            <div class="row">
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-sm-4 d-flex justify-content-center mt-4">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/laptop.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product End -->
+    <!-- Contact Start -->
+    <section id="contact">
+        <div class="container text-center py-5">
+            <h1>Contact</h1>
+            <div class="row text-left bg-light p-4">
+                <div class="col">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputName">Your Name</label>
+                            <input type="text" class="form-control" id="exampleInputName">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Your Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                                else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Your Subject</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End -->
+    <!-- Footer Start -->
+    <footer class="bg-dark text-center text-white p-5">
+        &copy;fjribptra | All right saved
+    </footer>
+    <!-- Footer End -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
